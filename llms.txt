@@ -1,0 +1,22 @@
+# Ondřej Mičaník
+
+> Student IT z Ostravy (Pedagogická fakulta Univerzity Palackého v Olomouci, od 2026). Staví hry pro Roblox, autonomního YouTube Shorts bota a weby na míru pro malé firmy. Web je jedna pixel-art ulice v Ostravě, každý dům je jedna část portfolia.
+
+## Kontakt
+- E-mail: ondrulisek@gmail.com
+- GitHub: https://github.com/kulisek2124
+- Kde: Ostrava, přes týden Olomouc; osobně po domluvě, jinak online
+
+## Projekty
+- Poznej Ostravu (Roblox, ve vývoji): Ostrava jako hratelné město s povoláními (městská policie s minihrami, hasiči, kurýr, obchod), ekonomikou, vozidly s vlastní fyzikou a nextbike koly. https://www.roblox.com/games/130787180878027
+- Městské holubníky (Roblox, hotové): herní systém péče o holuby s kariérním formulářem přes externí API.
+- YouTube Shorts bot (Python): autonomní pipeline nápad → scénář → fakt-check → TTS → záběry → střih → QC → publikace; dva kanály, tři videa denně.
+- Weby: Advokátní kancelář Mičaník (https://kulisek2124.github.io/WEB/), Bakasu Kennel (https://github.com/kulisek2124/bakasu-kennel).
+- Laboratoř: AI Továrna (dva modely spolupracující jako tým), Lead bot (hledání firem bez webu).
+
+## Nabídka: tvorba webů
+- Vizitka od 9 900 Kč, Firemní web od 19 900 Kč, Web se správou od 29 900 Kč, Hosting a péče 390 Kč/měsíc.
+- Vždy: vlastní design, mobil a rychlost, SEO + připravenost pro AI vyhledávání (schema.org, sitemap, llms.txt), přesměrování starých adres, předání kódu.
+
+## Dovednosti
+Roblox Studio / Luau, Python, HTML/CSS/JS (canvas, pixel art), Git/GitHub, SEO, práce s AI (Claude, GPT), testování (pytest, Playwright).

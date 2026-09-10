@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ondřej Mičaník</title>
+<meta name="description" content="Ondřej Mičaník — student IT z Ostravy. Stavím Roblox hry, autonomního YouTube bota a weby pro lidi, kteří je potřebují. Jedna ulice, sedm dveří, projděte se.">
+<meta name="author" content="Ondřej Mičaník">
+<meta name="theme-color" content="#070A12">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Ondřej Mičaník — jedna ulice, sedm dveří">
+<meta property="og:description" content="Roblox hry, autonomní YouTube bot, weby na míru. Student IT z Ostravy.">
+<link rel="canonical" href="https://kulisek2124.github.io/">
+<meta property="og:url" content="https://kulisek2124.github.io/">
+<meta property="og:image" content="https://kulisek2124.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Ondřej Mičaník — jedna ulice, sedm dveří"><meta name="twitter:image" content="https://kulisek2124.github.io/og-image.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"Person","@id":"https://kulisek2124.github.io/#me","name":"Ondřej Mičaník","url":"https://kulisek2124.github.io/","email":"mailto:ondrulisek@gmail.com","jobTitle":"Student IT, vývojář","homeLocation":{"@type":"Place","name":"Ostrava, Česko"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Univerzita Palackého v Olomouci, Pedagogická fakulta"},"knowsAbout":["Roblox Studio","Luau","Python","automatizace","tvorba webů","SEO","pixel art","AI nástroje"],"sameAs":["https://github.com/kulisek2124"]},
+ {"@type":"WebSite","@id":"https://kulisek2124.github.io/#site","url":"https://kulisek2124.github.io/","name":"Ondřej Mičaník","inLanguage":"cs","author":{"@id":"https://kulisek2124.github.io/#me"}},
+ {"@type":"Service","name":"Tvorba webových stránek","provider":{"@id":"https://kulisek2124.github.io/#me"},"areaServed":"Česko","serviceType":"Web design a vývoj","description":"Weby na míru pro malé firmy a živnostníky: vlastní design, rychlost, SEO a připravenost pro AI vyhledávání, správa obsahu, předání kódu.","offers":[{"@type":"Offer","name":"Vizitka","price":"9900","priceCurrency":"CZK"},{"@type":"Offer","name":"Firemní web","price":"19900","priceCurrency":"CZK"},{"@type":"Offer","name":"Web se správou","price":"29900","priceCurrency":"CZK"}]}
+]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<style>
+  :root{
+    --bg:#070A12; --bg2:#0B1020; --panel:#0E1424; --panel2:#151E33; --line:#1B2740; --line2:#263757;
+    --ink:#F7F7F2; --ink2:#C9CFDD; --mute:#7F8AA3; --teal:#4EE6CC; --teal2:#9CF5E6; --tealDim:#1E6E64; --glow:rgba(78,230,204,.22); --glow2:rgba(78,230,204,.45);
+    --amber:#FFC067; --red:#FF4A5C; --pink:#FF7AB8; --violet:#B48CFF; --green:#7CFF6B; --blue:#5AB4FF;
+    --px:"Pixelify Sans","Press Start 2P",monospace; --mono:"IBM Plex Mono","SFMono-Regular",Consolas,monospace;
+    --max:1180px; --gutter:clamp(16px,4vw,48px);
+    color-scheme:dark only;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;background:var(--bg)}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--mono);font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px);opacity:.35;z-index:0;mix-blend-mode:multiply}
+  a{color:var(--teal)}
+  h1,h2,h3{font-family:var(--px);font-weight:600;margin:0;line-height:1.1;letter-spacing:.01em}
+  h2{font-size:clamp(26px,3.4vw,40px);color:var(--ink)}
+  h3{font-size:20px;color:var(--teal2)}
+  p{margin:0}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter);position:relative;z-index:1}
+  .muted{color:var(--mute)} .small{font-size:13.5px}
+  .tag{display:inline-block;font-size:12px;padding:2px 8px;border:1px solid var(--line2);border-radius:3px;color:var(--ink2);background:var(--bg2);margin:2px 4px 2px 0}
+  .tag.t{border-color:var(--tealDim);color:var(--teal)} .tag.a{border-color:#6B4A2A;color:var(--amber)} .tag.v{border-color:#4A3A6B;color:var(--violet)} .tag.p{border-color:#6B2A4A;color:var(--pink)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border:1px solid var(--teal);color:var(--teal);font-family:var(--px);font-size:17px;text-decoration:none;position:relative;transition:background .15s,color .15s,box-shadow .15s;background:rgba(78,230,204,.04)}
+  .btn:hover{background:var(--teal);color:#06141A;box-shadow:0 0 0 1px var(--teal),0 0 24px var(--glow2)}
+  .btn.ghost{border-color:var(--line2);color:var(--ink2);background:transparent}
+  .btn.ghost:hover{border-color:var(--ink2);background:var(--panel2);color:var(--ink);box-shadow:none}
+  /* corner marks: the dashboard's signature */
+  .cm{position:relative}
+  .cm>i.c{position:absolute;inset:0;pointer-events:none}
+  .cm::before,.cm::after,.cm>i.c::before,.cm>i.c::after{content:"";position:absolute;width:8px;height:8px;border:1px solid var(--teal);opacity:.7;pointer-events:none}
+  .cm::before{left:-1px;top:-1px;border-right:0;border-bottom:0} .cm::after{right:-1px;top:-1px;border-left:0;border-bottom:0}
+  .cm>i.c::before{left:-1px;bottom:-1px;border-right:0;border-top:0} .cm>i.c::after{right:-1px;bottom:-1px;border-left:0;border-top:0}
+
+  /* ---------- HUD ---------- */
+  .hud{position:sticky;top:0;z-index:30;background:rgba(7,10,18,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .hud .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+  .brand .lamp{width:10px;height:10px;background:var(--teal);box-shadow:0 0 12px var(--teal2);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.45}}
+  .brand b{font-family:var(--px);font-weight:600;font-size:20px;letter-spacing:.02em}
+  .brand small{display:block;white-space:nowrap;font-size:12px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+  .nav{display:flex;gap:clamp(10px,1.5vw,18px);align-items:center}
+  .nav a{white-space:nowrap;color:var(--ink2);text-decoration:none;font-size:13.5px;letter-spacing:.04em;text-transform:uppercase;padding:4px 0;border-bottom:1px solid transparent}
+  .nav a:hover{color:var(--teal);border-color:var(--teal)}
+  .stat{display:flex;gap:14px;align-items:center;font-size:12.5px;color:var(--mute);white-space:nowrap}
+  .stat b{color:var(--teal);font-weight:500}
+  .tog{display:inline-flex;gap:6px}
+  .tog button{width:30px;height:26px;border:1px solid var(--line2);color:var(--ink2);font-size:13px;display:grid;place-items:center;transition:all .15s}
+  .tog button:hover,.tog button.on{border-color:var(--teal);color:var(--teal);box-shadow:inset 0 0 12px var(--glow)}
+  @media (max-width:960px){.nav{display:none}.stat .clock{display:none}}
+
+  /* ---------- STAGE ---------- */
+  .stage{position:relative;z-index:1;background:#080C1D;border-bottom:1px solid var(--line)}
+  .stage .wrap{padding:0}
+  .screen{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#080C1D;box-shadow:inset 0 0 120px rgba(0,0,0,.6)}
+  #street{width:100%;height:100%;display:block;image-rendering:pixelated;image-rendering:crisp-edges;touch-action:manipulation}
+  .vignette{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at center,transparent 55%,rgba(0,0,0,.45) 100%)}
+  .hint{position:absolute;left:16px;bottom:14px;display:flex;gap:8px;align-items:center;font-size:12.5px;color:var(--ink2);background:rgba(7,10,18,.72);border:1px solid var(--line2);padding:6px 10px;pointer-events:none}
+  .hint kbd{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);border-bottom-width:2px;padding:1px 5px;background:var(--bg2);color:var(--teal)}
+  .tip{position:absolute;top:14px;left:50%;transform:translateX(-50%);font-family:var(--px);font-size:18px;color:var(--teal);background:rgba(7,10,18,.8);border:1px solid var(--tealDim);padding:6px 14px;pointer-events:none;opacity:0;transition:opacity .15s;white-space:nowrap}
+  .tip.on{opacity:1}
+  .bubble{position:absolute;left:24px;top:52%;font-family:var(--px);font-size:16px;color:var(--ink);background:#F7F7F2;color:#0B1020;padding:4px 10px;border-radius:3px;opacity:0;transition:opacity .2s;pointer-events:none}
+  .bubble.on{opacity:1}
+  .title{position:absolute;right:18px;top:14px;text-align:right;pointer-events:none}
+  .title h1{font-size:clamp(22px,3.4vw,44px);color:var(--ink);text-shadow:0 0 18px rgba(78,230,204,.35),2px 2px 0 #0B1020}
+  .title p{font-family:var(--px);font-size:clamp(12px,1.4vw,16px);color:var(--teal);letter-spacing:.06em;text-shadow:1px 1px 0 #0B1020}
+  @media (max-width:640px){
+    .hint{display:none}.title h1{font-size:22px}
+    .stat span:not(.tog){display:none}
+    /* on a phone the street is cropped a little at the sides instead of shrinking to a strip */
+    .screen{aspect-ratio:3/2}
+    #street{position:absolute;top:0;left:50%;height:100%;width:auto;transform:translateX(-50%)}
+  }
+
+  /* the panel you step into */
+  .panel{position:absolute;inset:0;display:none;align-items:flex-end;justify-content:center;background:rgba(7,10,18,.55);z-index:5}
+  .panel.on{display:flex}
+  .panel .box{width:min(880px,calc(100% - 28px));max-height:calc(100% - 24px);margin-bottom:12px;background:rgba(11,16,32,.96);border:1px solid var(--line2);box-shadow:0 20px 60px rgba(0,0,0,.6),0 0 0 1px rgba(78,230,204,.1);display:grid;grid-template-rows:auto minmax(0,1fr);animation:rise .25s ease}
+  @keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+  .panel .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 16px;border-bottom:1px solid var(--line);background:var(--bg2)}
+  .panel .bar b{font-family:var(--px);font-size:18px;color:var(--teal)}
+  .panel .bar span{font-size:12px;color:var(--mute)}
+  .panel .bar button{width:30px;height:30px;border:1px solid var(--line2);color:var(--ink2);font-size:18px;display:grid;place-items:center}
+  .panel .bar button:hover{border-color:var(--red);color:var(--red)}
+  .panel .body{overflow:auto;padding:18px 20px 22px}
+  .panel .body h2{display:none}
+  .panel .body .lead{margin-top:0}
+
+  /* ---------- SECTIONS ---------- */
+  section.sec{padding-block:clamp(44px,6vw,80px);border-bottom:1px solid var(--line);scroll-margin-top:64px}
+  section.sec:nth-child(even){background:var(--bg2)}
+  .head{display:flex;align-items:baseline;gap:16px;margin-bottom:22px;flex-wrap:wrap}
+  .head .n{font-family:var(--px);color:var(--teal);font-size:14px;letter-spacing:.1em}
+  .head .n::before{content:"[ "} .head .n::after{content:" ]"}
+  .lead{color:var(--ink2);max-width:70ch;font-size:16px;margin-top:8px}
+  .lead+.lead{margin-top:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:22px}
+  .card{background:var(--panel);border:1px solid var(--line);padding:18px 20px;display:grid;gap:10px;align-content:start;position:relative;transition:border-color .15s,box-shadow .15s}
+  .card:hover{border-color:var(--tealDim);box-shadow:0 0 0 1px rgba(78,230,204,.12),0 10px 30px rgba(0,0,0,.35)}
+  .card h3{font-size:19px}
+  .card .st{font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+  .card .st b{color:var(--amber);font-weight:500}
+  .card p{color:var(--ink2);font-size:14.5px}
+  .card ul{margin:0;padding-left:18px;color:var(--ink2);font-size:14px}
+  .card li{margin:3px 0}
+  .card .foot{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap;margin-top:4px}
+  .ico{width:44px;height:44px;image-rendering:pixelated;display:block}
+  .two{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:28px;align-items:start}
+  @media (max-width:860px){.two{grid-template-columns:1fr}}
+  .kv{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14.5px}
+  .kv dt{color:var(--mute)} .kv dd{margin:0;color:var(--ink2)}
+  /* stat bars */
+  .bars{display:grid;gap:10px}
+  .bar-row{display:grid;grid-template-columns:150px 1fr auto;gap:12px;align-items:center;font-size:14px}
+  .bar-row .lvl{height:12px;background:var(--bg);border:1px solid var(--line2);position:relative;overflow:hidden}
+  .bar-row .lvl i{position:absolute;inset:0;width:var(--w);background:repeating-linear-gradient(90deg,var(--teal) 0 6px,transparent 6px 8px);box-shadow:0 0 12px var(--glow2)}
+  .bar-row .lvl i.a{background:repeating-linear-gradient(90deg,var(--amber) 0 6px,transparent 6px 8px)}
+  .bar-row .lvl i.v{background:repeating-linear-gradient(90deg,var(--violet) 0 6px,transparent 6px 8px)}
+  .bar-row .lvl i.p{background:repeating-linear-gradient(90deg,var(--pink) 0 6px,transparent 6px 8px)}
+  .bar-row em{font-style:normal;color:var(--mute);font-size:12.5px}
+  @media (max-width:560px){.bar-row{grid-template-columns:110px 1fr auto}}
+  /* timeline */
+  .tl{list-style:none;margin:0;padding:0;border-left:1px dashed var(--line2);display:grid;gap:14px}
+  .tl li{position:relative;padding-left:20px}
+  .tl li::before{content:"";position:absolute;left:-4px;top:8px;width:7px;height:7px;background:var(--teal);box-shadow:0 0 10px var(--glow2)}
+  .tl b{color:var(--ink);font-weight:500} .tl span{display:block;color:var(--mute);font-size:13px}
+  /* pricing */
+  .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px}
+  .plan{background:var(--panel);border:1px solid var(--line);padding:20px 22px;display:grid;gap:10px;align-content:start}
+  .plan.hot{border-color:var(--teal);box-shadow:0 0 0 1px rgba(78,230,204,.2),0 0 40px var(--glow)}
+  .plan .price{font-family:var(--px);font-size:30px;color:var(--ink)}
+  .plan .price small{font-size:14px;color:var(--mute);font-family:var(--mono)}
+  .plan ul{margin:0;padding-left:18px;color:var(--ink2);font-size:14px}
+  .plan li{margin:4px 0}
+  .steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:22px}
+  .step{border:1px solid var(--line);padding:14px 16px;background:var(--bg)}
+  .step b{font-family:var(--px);color:var(--teal);font-size:18px;display:block;margin-bottom:4px}
+  .step p{font-size:14px;color:var(--ink2)}
+  .form{display:grid;gap:12px;background:var(--panel);border:1px solid var(--line);padding:20px 22px;margin-top:22px;max-width:720px}
+  .form label{display:grid;gap:5px;font-size:13px;color:var(--mute)}
+  .form input,.form select,.form textarea{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line2);padding:10px 12px;width:100%}
+  .form input:focus,.form select:focus,.form textarea:focus{outline:1px solid var(--teal);outline-offset:1px}
+  .form .two{gap:12px}
+  /* contact */
+  .contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:22px}
+  .contact a.card{text-decoration:none;color:inherit}
+  .contact .card b{font-family:var(--px);font-size:19px;color:var(--teal)}
+  footer{padding-block:34px 44px;color:var(--mute);font-size:13px;position:relative;z-index:1}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer b{color:var(--ink2);font-weight:500}
+  /* boot */
+  .boot{position:fixed;inset:0;background:var(--bg);z-index:100;display:grid;place-items:center;font-family:var(--mono);color:var(--teal);font-size:14px;transition:opacity .4s}
+  .boot pre{margin:0;white-space:pre-wrap;line-height:1.5}
+  .boot.off{opacity:0;pointer-events:none}
+  .cursor::after{content:"▮";animation:pulse .8s infinite}
+  @media (prefers-reduced-motion:reduce){*{animation-duration:.001s!important;transition-duration:.001s!important}}
+</style>
+</head>
+<body>
+<div class="boot" id="boot"><pre id="bootTxt"></pre></div>
+
+<header class="hud">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="lamp"></span><span><b>ONDŘEJ MIČANÍK</b><small>student · vývojář · Ostrava</small></span></a>
+    <nav class="nav">
+      <a href="#o-mne">O mně</a><a href="#roblox">Roblox</a><a href="#shorts">Shorts bot</a><a href="#weby">Tvorba webů</a><a href="#lab">Laboratoř</a><a href="#skola">Zkušenosti</a><a href="#kontakt">Kontakt</a>
+    </nav>
+    <div class="stat">
+      <span class="clock">Ostrava · <b id="clock">--:--</b></span>
+      <span>uptime <b id="uptime">0:00</b></span>
+      <span class="tog"><button id="tRain" title="Déšť">☂</button><button id="tDay" title="Den / noc">☀</button></span>
+    </div>
+  </div>
+</header>
+
+<section class="stage" id="top">
+  <div class="wrap">
+    <div class="screen">
+      <canvas id="street" aria-label="Pixelová ulice — každý dům je jedna část webu"></canvas>
+      <div class="vignette"></div>
+      <div class="title"><h1>Ondřej Mičaník</h1><p>jedna ulice · sedm dveří · vejdi</p></div>
+      <div class="tip" id="tip"></div>
+      <div class="bubble" id="bubble"></div>
+      <div class="hint"><kbd>←</kbd><kbd>→</kbd> chodit &nbsp;·&nbsp; <kbd>Enter</kbd> vejít &nbsp;·&nbsp; nebo klikni na dům</div>
+      <div class="panel" id="panel"><div class="box cm"><i class="c"></i><div class="bar"><b id="pTitle"></b><span id="pSub"></span><button id="pClose" aria-label="Zavřít">×</button></div><div class="body" id="pBody"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="sec" id="o-mne"><div class="wrap">
+    <div class="head"><span class="n">01</span><h2>O mně</h2></div>
+    <div class="two">
+      <div>
+        <p class="lead">Jsem Ondřej, je mi 20, jsem z Ostravy a studuju informační technologie na Pedagogické fakultě Univerzity Palackého v Olomouci. Nejvíc mě baví stavět věci, které běží samy: hry pro Roblox s vlastní ekonomikou a fyzikou, bota, který každý den vydává YouTube Shorts bez toho, abych na něj sáhl, a weby pro lidi, kteří je potřebují a nechtějí se o ně starat.</p>
+        <p class="lead">Pracuju způsobem, kterému se dnes říká AI-native: AI je pro mě parťák, ne tlačítko. Plánuju, zadávám, kritizuju, testuju a ladím — a hlídám, aby výsledek dával smysl uživateli, ne jen mně. Tenhle web je toho ukázka: jedna ulice v Ostravě, kde každý dům je jedna část mého života.</p>
+        <p class="lead small muted">Ulice nahoře je nakreslená pixel po pixelu na plátně 640 × 360 a žije: okna se rozsvěcují, tramvaj DPO jezdí podle nálady, na parapetu spí kočka a nebe se řídí skutečným časem. Zkuste šipky.</p>
+      </div>
+      <dl class="kv cm" style="background:var(--panel);border:1px solid var(--line);padding:18px 20px;margin:0"><i class="c"></i>
+        <dt>Jméno</dt><dd>Ondřej Mičaník</dd>
+        <dt>Věk</dt><dd>20 let</dd>
+        <dt>Bydliště</dt><dd>Ostrava (přes týden Olomouc)</dd>
+        <dt>Studium</dt><dd>PdF UP Olomouc — IT a společenské vědy se zaměřením na vzdělávání (od 2026)</dd>
+        <dt>Nástroje</dt><dd>Roblox Studio, Python, VS Code, Git, Claude & GPT</dd>
+        <dt>Stav</dt><dd><span class="tag t">otevřený zakázkám na weby</span></dd>
+      </dl>
+    </div>
+  </div></section>
+
+  <section class="sec" id="roblox"><div class="wrap">
+    <div class="head"><span class="n">02</span><h2>Roblox projekty</h2></div>
+    <p class="lead">Herní systémy, které musí vydržet stovky hráčů najednou: povolání, ekonomika, vozidla s vlastní fyzikou, minihry. Všechno v Roblox Studiu a jazyce Luau.</p>
+    <div class="grid">
+      <article class="card cm"><i class="c"></i><span class="st">Hlavní projekt · <b>ve vývoji</b></span><h3>Poznej Ostravu</h3>
+        <p>Ostrava jako hratelné město s povoláními. Hráč si vybere práci a postupuje hodnostmi — nebo si jen zaskočí na kolo.</p>
+        <ul><li><b>Městská policie</b> s hodnostmi a minihrami: kamerový dispečink (najít sprejera na městských kamerách), pátrání po ztraceném dítěti přes výslech svědků</li><li><b>Hasiči, kurýr Foodora, Lidl, OZO</b> — každé povolání má vlastní smyčku a výdělek</li><li><b>Ekonomika</b>: vyvážené hodinové výdělky, ceny domů a aut, mince ve světě</li><li><b>Vozidla</b>: skútry s vlastním jízdním modelem (antigravitační závěs, náklon do zatáček, IK jezdce), nextbike kola s plynulou jízdou po klientu</li></ul>
+        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">game design</span><span class="tag">fyzika</span></span><a href="https://www.roblox.com/games/130787180878027" target="_blank" rel="noopener">otevřít na Robloxu ↗</a></div>
+      </article>
+      <article class="card cm"><i class="c"></i><span class="st">Herní systém · <b>hotové</b></span><h3>Městské holubníky</h3>
+        <p>Práce, kde se hráč stará o holuby: voda, krmivo, podestýlka, směny u NPC, ~70 hnízd a holubi, kteří opravdu létají.</p>
+        <ul><li>Kariérní formulář a dotazy přes externí API</li><li>Ochrana proti spamu a zneužití</li><li>Navrženo tak, aby se holubníky vyplatily víc než vstupní práce, ale nepřebily hodnostní kariéru</li></ul>
+        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">API</span><span class="tag">systémy</span></span></div>
+      </article>
+      <article class="card cm"><i class="c"></i><span class="st">Vývojová place · <b>běží</b></span><h3>Stavění</h3>
+        <p>Testovací prostředí pro Poznej Ostravu. Tady se ladí vozidla a fyzika, než se přenesou do hlavní hry.</p>
+        <ul><li>Dvě iterace jízdního modelu skútrů — od A-Chassis k vlastnímu odlehčenému závěsu</li><li>Nasedání dotykem místo klávesy, ochrana proti okamžitému znovunasednutí</li></ul>
+        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">prototypování</span></span></div>
+      </article>
+    </div>
+  </div></section>
+
+  <section class="sec" id="shorts"><div class="wrap">
+    <div class="head"><span class="n">03</span><h2>YouTube Shorts bot</h2></div>
+    <div class="two">
+      <div>
+        <p class="lead">Autonomní továrna na krátká videa. Každý den si sama vymyslí téma, napíše scénář, zkontroluje fakta, namluví, najde záběry, sestříhá, ohodnotí a naplánuje vydání — na dva kanály najednou. Já jen čtu týdenní hlášení a občas přitvrdím zadání.</p>
+        <ul class="tl" style="margin-top:18px">
+          <li><b>Nápady</b><span>autor + kritik (dva průchody modelem), skóre virality, zásobník ručně vybraných témat a čtyři opakující se série</span></li>
+          <li><b>Scénář → audit → fakt-check</b><span>hook do 2 s, smyčkové zakončení, kontrola tvrzení proti zdrojům</span></li>
+          <li><b>Hlas a obraz</b><span>TTS s fallbackem, záběry z Pexels/Pixabay/Wikimedia vybírané podle relevance, titulky s důrazovými slovy, hudební podklad s duckingem</span></li>
+          <li><b>Střih a kontrola</b><span>ffmpeg, barevný grade, hook card, QC před uploadem</span></li>
+          <li><b>Publikace a učení</b><span>YouTube Data API, plánování, analytika, A/B experimenty, deduplikace, zámek proti souběhu, týdenní digest</span></li>
+        </ul>
+      </div>
+      <div class="card cm"><i class="c"></i><span class="st">Stack</span>
+        <div class="kv"><dt>Jazyk</dt><dd>Python</dd><dt>Modely</dt><dd>Claude (přes předplatné, ne API)</dd><dt>API</dt><dd>YouTube Data API v3, Pexels, Pixabay, Wikimedia</dd><dt>Média</dt><dd>ffmpeg, edge-tts, ASS titulky</dd><dt>Běh</dt><dd>Windows Task Scheduler, 3 videa denně</dd><dt>Dashboard</dt><dd>pixel-art noční město (odkud je i tenhle web)</dd></div>
+        <p class="small muted">Kanály: <b>Boogie</b> (zajímavosti — This Can Kill You, Still Happening, The Number Nobody Checks, It Actually Happened) a <b>Seconds Before</b> (katastrofy).</p>
+        <div class="foot"><span><span class="tag t">Python</span><span class="tag t">automatizace</span><span class="tag">ffmpeg</span><span class="tag">API</span></span></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="weby"><div class="wrap">
+    <div class="head"><span class="n">04</span><h2>Tvorba webů</h2><span class="tag t">otevřeno</span></div>
+    <p class="lead">Postavím vám web, který vypadá dobře, načte se okamžitě a najde ho Google i AI asistenti. Žádná šablona — design na míru oboru, texty, které dávají smysl, a správa, kterou zvládne kdokoli. Web je po předání váš, včetně kódu.</p>
+    <div class="grid">
+      <article class="card cm"><i class="c"></i><span class="st">Reference · <b>2026</b></span><h3>Advokátní kancelář Mičaník</h3><p>Klidný, čitelný web pro advokáta v Ostravě: 11 oblastí práva, online objednání na konzultaci a intranet s fakturami, klienty a poznámkami. Strukturovaná data, časté dotazy, přesměrování starých adres.</p><div class="foot"><span><span class="tag">rezervace</span><span class="tag">intranet</span><span class="tag">SEO</span></span><a href="https://kulisek2124.github.io/WEB/" target="_blank" rel="noopener">zobrazit ↗</a></div></article>
+      <article class="card cm"><i class="c"></i><span class="st">Reference · <b>2026</b></span><h3>Bakasu Kennel</h3><p>Web chovatelské stanice francouzských buldočků: vrhy a stav štěňat, poptávkový formulář, galerie s alby pro stovky fotek a správa, kterou chovatelka obsluhuje z telefonu.</p><div class="foot"><span><span class="tag">galerie</span><span class="tag">správa</span><span class="tag">SEO</span></span><a href="https://github.com/kulisek2124/bakasu-kennel" target="_blank" rel="noopener">kód ↗</a></div></article>
+      <article class="card cm"><i class="c"></i><span class="st">Co dostanete vždy</span><h3>Standard</h3><ul><li>vlastní design, ne šablona</li><li>mobil, rychlost, přístupnost</li><li>SEO + připravenost pro AI vyhledávání (schema.org, sitemap, llms.txt)</li><li>přesměrování starých adres, když nahrazujeme starý web</li><li>předání kódu a zaškolení</li></ul></article>
+    </div>
+    <div class="plans">
+      <div class="plan"><span class="st muted">Vizitka</span><span class="price">od 9 900 <small>Kč</small></span><ul><li>jednostránkový web</li><li>kontakt, mapa, služby</li><li>SEO základ</li><li>hotovo do týdne</li></ul></div>
+      <div class="plan hot"><span class="st muted">Firemní web</span><span class="price">od 19 900 <small>Kč</small></span><ul><li>více sekcí a stránek</li><li>formuláře, fotogalerie</li><li>strukturovaná data, časté dotazy</li><li>jednoduchá správa obsahu</li></ul></div>
+      <div class="plan"><span class="st muted">Web se správou</span><span class="price">od 29 900 <small>Kč</small></span><ul><li>rezervace / poptávky / galerie</li><li>databáze a přihlášení</li><li>e-mailová upozornění</li><li>zálohy</li></ul></div>
+      <div class="plan"><span class="st muted">Hosting a péče</span><span class="price">390 <small>Kč / měsíc</small></span><ul><li>hosting a doména v ceně nastavení</li><li>aktualizace a drobné úpravy</li><li>zálohy a dohled</li><li>odpověď do 24 h</li></ul></div>
+    </div>
+    <div class="steps">
+      <div class="step"><b>01</b><p>Zavoláme si nebo napíšete. Řeknete, co web má dělat a pro koho.</p></div>
+      <div class="step"><b>02</b><p>Do tří dnů dostanete klikací návrh. Upravíme, dokud nesedí.</p></div>
+      <div class="step"><b>03</b><p>Stavba, texty, SEO. Průběžně vidíte, jak roste.</p></div>
+      <div class="step"><b>04</b><p>Spuštění, přesměrování domény, zaškolení. Web je váš.</p></div>
+    </div>
+    <form class="form cm" id="offerForm"><i class="c"></i>
+      <b style="font-family:var(--px);color:var(--teal);font-size:18px">Nezávazná poptávka</b>
+      <div class="two"><label>Jméno / firma<input id="fName" required></label><label>E-mail nebo telefon<input id="fContact" required></label></div>
+      <label>Co potřebujete<select id="fType"><option>Vizitka</option><option selected>Firemní web</option><option>Web se správou</option><option>Nevím, poradíte</option></select></label>
+      <label>Pár slov o vás a webu<textarea id="fMsg" rows="4" placeholder="Např. jsme malé kadeřnictví v Porubě, máme starý web z roku 2012…"></textarea></label>
+      <div><button class="btn" type="submit">Odeslat poptávku →</button> <span class="small muted" style="margin-left:10px">Otevře se váš e-mail s předvyplněnou zprávou.</span></div>
+    </form>
+  </div></section>
+
+  <section class="sec" id="lab"><div class="wrap">
+    <div class="head"><span class="n">05</span><h2>Laboratoř</h2></div>
+    <p class="lead">Věci ve fázi návrhu. Nejdřív koncept, kritika, čísla — pak kód.</p>
+    <div class="grid">
+      <article class="card cm"><i class="c"></i><span class="st">Koncept · <b>návrh</b></span><h3>AI Továrna</h3><p>Lokální řídicí centrum, kde dva modely spolupracují jako tým: Claude staví, GPT kritizuje, testuje a hraje znuděného uživatele i investora. Cíl: malé aplikace a hry jako předplatné, s minimem lidské práce a s promo videi ze Shorts bota.</p><div class="foot"><span><span class="tag v">orchestrace</span><span class="tag v">micro-SaaS</span></span></div></article>
+      <article class="card cm"><i class="c"></i><span class="st">Koncept · <b>návrh</b></span><h3>Lead bot</h3><p>Robot, který najde firmy bez webu nebo se zastaralým webem, ohodnotí šanci, že se ozvou, a připraví podklady. Když se ozvou, postavím jim web — viz Tvorba webů.</p><div class="foot"><span><span class="tag v">scraping</span><span class="tag v">skórování</span></span></div></article>
+      <article class="card cm"><i class="c"></i><span class="st">Tenhle web · <b>běží</b></span><h3>Ulice</h3><p>Pixelová Ostrava na plátně 640 × 360: silueta s Bolt Tower, Novou radnicí a těžní věží, sedm domů, tramvaj DPO, auta, cyklista na nextbike, kočka, déšť, den a noc podle hodin a jedna tajná kombinace kláves.</p><div class="foot"><span><span class="tag t">canvas</span><span class="tag t">pixel art</span><span class="tag">0 knihoven</span></span><a href="https://github.com/kulisek2124/kulisek2124.github.io" target="_blank" rel="noopener">kód ↗</a></div></article>
+    </div>
+  </div></section>
+
+  <section class="sec" id="skola"><div class="wrap">
+    <div class="head"><span class="n">06</span><h2>Studium & zkušenosti</h2></div>
+    <div class="two">
+      <div>
+        <ul class="tl">
+          <li><b>2026 → Univerzita Palackého v Olomouci, Pedagogická fakulta</b><span>Bc. Informační technologie se zaměřením na vzdělávání + Společenské vědy se zaměřením na vzdělávání</span></li>
+          <li><b>2026 — weby na zakázku</b><span>advokátní kancelář, chovatelská stanice; SEO, správa obsahu, nasazení</span></li>
+          <li><b>2026 — YouTube Shorts bot</b><span>autonomní pipeline v Pythonu, dva kanály, denní provoz</span></li>
+          <li><b>Roblox — Poznej Ostravu, Městské holubníky, Stavění</b><span>herní systémy, ekonomika, fyzika vozidel, práce s týmem</span></li>
+        </ul>
+        <p class="lead small" style="margin-top:18px">Co umím nejlíp: rozložit velkou věc na malé, zadat ji tak, aby šla postavit, a pak ji dotáhnout — včetně nudných částí jako zálohy, zámky proti souběhu a přesměrování starých adres.</p>
+      </div>
+      <div class="card cm"><i class="c"></i><span class="st">Stack</span>
+        <div class="bars">
+          <div class="bar-row"><span>Roblox / Luau</span><div class="lvl"><i class="p" style="--w:88%"></i></div><em>3 projekty</em></div>
+          <div class="bar-row"><span>Python</span><div class="lvl"><i style="--w:78%"></i></div><em>automatizace, API</em></div>
+          <div class="bar-row"><span>HTML / CSS / JS</span><div class="lvl"><i style="--w:74%"></i></div><em>weby, canvas</em></div>
+          <div class="bar-row"><span>SEO & AI-ready</span><div class="lvl"><i class="a" style="--w:70%"></i></div><em>schema.org, llms.txt</em></div>
+          <div class="bar-row"><span>Git / GitHub</span><div class="lvl"><i style="--w:66%"></i></div><em>Pages, Desktop</em></div>
+          <div class="bar-row"><span>Práce s AI</span><div class="lvl"><i class="v" style="--w:92%"></i></div><em>Claude, GPT</em></div>
+          <div class="bar-row"><span>Testování</span><div class="lvl"><i style="--w:52%"></i></div><em>pytest, Playwright</em></div>
+        </div>
+        <p class="small muted">Jazyky: čeština rodná, angličtina pracovní (čtu dokumentaci, píšu s AI).</p>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="sec" id="kontakt"><div class="wrap">
+    <div class="head"><span class="n">07</span><h2>Kontakt</h2></div>
+    <p class="lead">Nejrychleji e-mailem. Odpovídám obvykle do 24 hodin — ne uprostřed přednášky.</p>
+    <div class="contact">
+      <a class="card cm" href="mailto:ondrulisek@gmail.com"><i class="c"></i><span class="st">E-mail</span><b>ondrulisek@gmail.com</b><p>zakázky, spolupráce, dotazy</p></a>
+      <a class="card cm" href="https://github.com/kulisek2124" target="_blank" rel="noopener"><i class="c"></i><span class="st">GitHub</span><b>kulisek2124</b><p>kód webů a projektů</p></a>
+      <div class="card cm"><i class="c"></i><span class="st">Kde</span><b>Ostrava · Olomouc</b><p>osobně po domluvě, jinak online</p></div>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap"><div><b>Ondřej Mičaník</b> · © <span id="year"></span> · Ostrava</div><div>Postaveno s láskou, časem a energií. Žádné knihovny, žádné sledování, jen plátno a kód.</div></div></footer>
+
+<script src="street.js"></script>
+<script>
+(function(){
+  const $=q=>document.querySelector(q);
+  $('#year').textContent=new Date().getFullYear();
+  // boot
+  const boot=$('#boot'), bt=$('#bootTxt'); const lines=['> ondrej.exe','> načítám ulici.js ........ ok','> kreslím Ostravu 640x360 .. ok','> tramvaj DPO ............. na cestě','> kočka ................... spí','> vítejte.'];
+  if(sessionStorage.getItem('booted')){ boot.classList.add('off'); } else { let i=0; const tick=()=>{ if(i<lines.length){ bt.textContent+=lines[i]+'\n'; i++; setTimeout(tick,i===lines.length?420:140);} else { boot.classList.add('off'); try{sessionStorage.setItem('booted','1');}catch(e){} } }; bt.classList.add('cursor'); tick(); }
+  // clock + uptime
+  const t0=Date.now(); setInterval(()=>{ const d=new Date(); $('#clock').textContent=d.toLocaleTimeString('cs-CZ',{hour:'2-digit',minute:'2-digit'}); const s=Math.floor((Date.now()-t0)/1000); $('#uptime').textContent=`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`; },1000);
+  // toggles
+  const rain=$('#tRain'), day=$('#tDay');
+  rain.onclick=()=>{ Street.setRain(!Street.rain); rain.classList.toggle('on',Street.rain); };
+  let forced=null; day.onclick=()=>{ forced=forced?null:(Street.timeKey==='day'?'night':'day'); Street.setTime(forced); day.classList.toggle('on',!!forced); day.textContent=forced==='night'?'☾':'☀'; };
+  // hover tip + bubble
+  const tip=$('#tip'), bubble=$('#bubble'); let bubbleT=null;
+  Street.on('hover',b=>{ if(b){ tip.textContent=b.name+' — '+b.label; tip.classList.add('on'); } else tip.classList.remove('on'); });
+  Street.on('say',txt=>{ bubble.textContent=txt; bubble.classList.add('on'); clearTimeout(bubbleT); bubbleT=setTimeout(()=>bubble.classList.remove('on'),1800); });
+  // panel
+  const panel=$('#panel'), pBody=$('#pBody'), pTitle=$('#pTitle'), pSub=$('#pSub');
+  const NAMES={'o-mne':['Domek','o mně'],roblox:['Herna','Roblox projekty'],shorts:['Studio','YouTube Shorts bot'],weby:['Web studio','tvorba webů'],lab:['Laboratoř','nápady ve vývoji'],skola:['Škola','studium & zkušenosti'],kontakt:['Kiosek','kontakt']};
+  function open(id){ const sec=document.getElementById(id); if(!sec) return; if(matchMedia('(max-width:640px)').matches){ sec.scrollIntoView({behavior:'smooth'}); return; } pBody.innerHTML=sec.querySelector('.wrap').innerHTML; pBody.querySelectorAll('.head').forEach(h=>h.remove()); const n=NAMES[id]||[id,'']; pTitle.textContent=n[0]; pSub.textContent=n[1]+'  ·  Esc zavře  ·  '; const go=document.createElement('a'); go.href='#'+id; go.textContent='přejít na sekci ↓'; go.onclick=close; pSub.appendChild(go); panel.classList.add('on'); wireForm(pBody); }
+  function close(){ panel.classList.remove('on'); }
+  $('#pClose').onclick=close; panel.addEventListener('click',e=>{ if(e.target===panel) close(); });
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
+  Street.on('enter',open); Street.on('blocked',()=>panel.classList.contains('on'));
+  // nav links to houses: walk there when the stage is visible
+  document.querySelectorAll('.nav a').forEach(a=>a.addEventListener('click',e=>{ const id=a.getAttribute('href').slice(1); if(window.scrollY<200){ e.preventDefault(); Street.walkTo(id,true);} }));
+  // offer form → mail client
+  function wireForm(root){ const f=root.querySelector('#offerForm'); if(!f) return; f.onsubmit=e=>{ e.preventDefault(); const g=id=>root.querySelector('#'+id).value.trim(); const body=`Dobrý den,\n\nmám zájem o: ${g('fType')}\nJméno / firma: ${g('fName')}\nKontakt: ${g('fContact')}\n\n${g('fMsg')}\n`; location.href='mailto:ondrulisek@gmail.com?subject='+encodeURIComponent('Poptávka webu — '+g('fName'))+'&body='+encodeURIComponent(body); }; }
+  wireForm(document);
+  // deep link
+  if(location.hash && NAMES[location.hash.slice(1)]) Street.stand(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
