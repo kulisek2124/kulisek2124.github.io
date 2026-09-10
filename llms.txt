@@ -1,6 +1,6 @@
 # Ondřej Mičaník
 
-> Student IT z Ostravy (Pedagogická fakulta Univerzity Palackého v Olomouci, od 2026). Staví hry pro Roblox, autonomního YouTube Shorts bota a weby na míru pro malé firmy. Web je jedna pixel-art ulice v Ostravě, každý dům je jedna část portfolia.
+> Lead Developer studia ČESKO.plus (Roblox hra Poznej Ostravu), student IT z Ostravy (Pedagogická fakulta Univerzity Palackého v Olomouci, od 2026). Provozuje autonomního YouTube Shorts bota (dva kanály) a staví weby na míru pro malé firmy. Web je jedna pixel-art ulice v Ostravě, každý dům je jedna část portfolia.
 
 ## Kontakt
 - E-mail: ondrulisek@gmail.com
@@ -8,15 +8,17 @@
 - Kde: Ostrava, přes týden Olomouc; osobně po domluvě, jinak online
 
 ## Projekty
-- Poznej Ostravu (Roblox, ve vývoji): Ostrava jako hratelné město s povoláními (městská policie s minihrami, hasiči, kurýr, obchod), ekonomikou, vozidly s vlastní fyzikou a nextbike koly. https://www.roblox.com/games/130787180878027
-- Městské holubníky (Roblox, hotové): herní systém péče o holuby s kariérním formulářem přes externí API.
-- YouTube Shorts bot (Python): autonomní pipeline nápad → scénář → fakt-check → TTS → záběry → střih → QC → publikace; dva kanály, tři videa denně.
+- Poznej Ostravu (Roblox, veřejná hra ve vývoji; Ondřej je vedoucí programátor — vede 3 programátory v 12členném týmu ČESKO.plus, od 7/2026): Ostrava jako hratelné město — povolání s hodnostmi a minihrami (městská policie, hasiči, kurýr Foodora, Lidl, OZO), funkční MHD, městské holubníky (péče o holuby, ~70 hnízd, kariérní formulář přes API), ekonomika, skútry s vlastním jízdním modelem, nextbike kola. https://www.roblox.com/games/130787180878027
+- Další hry: v plánu i mimo Roblox.
+- YouTube Shorts bot (Python): autonomní pipeline nápad → scénář → fakt-check → TTS → záběry → střih → QC → publikace; tři videa denně na dva kanály — Boogie (https://www.youtube.com/@Boogie2124; 10. 9. 2026: 172 odběratelů, 54 videí, ~160 tis. zhlédnutí) a Seconds Before (https://www.youtube.com/@secondsbeforeshorts; od 6. 9. 2026).
 - Weby: Advokátní kancelář Mičaník (https://kulisek2124.github.io/WEB/), Bakasu Kennel (https://github.com/kulisek2124/bakasu-kennel).
 - Laboratoř: AI Továrna (dva modely spolupracující jako tým), Lead bot (hledání firem bez webu).
 
 ## Nabídka: tvorba webů
-- Vizitka od 9 900 Kč, Firemní web od 19 900 Kč, Web se správou od 29 900 Kč, Hosting a péče 390 Kč/měsíc.
+- Orientační ceny: Vizitka od 3 900 Kč, Firemní web od 8 900 Kč, Web se správou od 14 900 Kč, Hosting a péče 250 Kč/měsíc. Vždy možnost dohody podle rozsahu (spolky, začínající firmy, studenti).
 - Vždy: vlastní design, mobil a rychlost, SEO + připravenost pro AI vyhledávání (schema.org, sitemap, llms.txt), přesměrování starých adres, předání kódu.
 
-## Dovednosti
-Roblox Studio / Luau, Python, HTML/CSS/JS (canvas, pixel art), Git/GitHub, SEO, práce s AI (Claude, GPT), testování (pytest, Playwright).
+## Zkušenosti a dovednosti
+- 7/2026 → Lead Developer, ČESKO.plus (Ostrava, hybridně). 9/2025 → tvorba webů na volné noze. 2021–2025 Vítkovická střední průmyslová škola, Informační technologie (maturita). 2026–2029 UP Olomouc.
+- Roblox Studio / Luau, C#, Python, SQL/SQLite, HTML/CSS, základy JavaScriptu a Reactu, AutoCAD, Git/GitHub, SEO, práce s AI (Claude, GPT). Čeština rodná, angličtina středně pokročilá.
+- LinkedIn: https://www.linkedin.com/in/ond%C5%99ej-mi%C4%8Dan%C3%ADk-0001b0373/

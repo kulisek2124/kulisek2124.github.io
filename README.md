@@ -1,6 +1,6 @@
 # Ondřej Mičaník — jedna ulice, sedm dveří
 
-Osobní web. Nahoře je pixel-art ulice v Ostravě nakreslená na plátně 640 × 360, každý dům je jedna část portfolia: **Domek** (o mně), **Herna** (Roblox projekty), **Studio** (YouTube Shorts bot), **Web studio** (tvorba webů + ceník a poptávka), **Laboratoř** (nápady ve vývoji), **Škola** (studium a zkušenosti), **Kiosek** (kontakt). Postavička chodí šipkami nebo klikem, Enter vejde dovnitř a otevře panel se sekcí.
+Osobní web. Nahoře je pixel-art ulice v Ostravě nakreslená na plátně 640 × 360, každý dům je jedna část portfolia: **Domek** (o mně), **Herna** (Poznej Ostravu a hry), **Studio** (YouTube Shorts bot), **Web studio** (tvorba webů + ceník a poptávka), **Laboratoř** (nápady ve vývoji), **Škola** (studium a zkušenosti), **Kiosek** (kontakt). Postavička chodí šipkami nebo klikem, Enter vejde dovnitř a otevře panel se sekcí.
 
 Živě: **https://kulisek2124.github.io/**
 
@@ -30,6 +30,7 @@ Ve stránce jsou strukturovaná data (schema.org `Person`, `WebSite`, `Service` 
 
 - **Texty a projekty**: přímo v `index.html`, sekce `#o-mne` … `#kontakt`. Panel, který se otevře po vstupu do domu, si obsah bere z těchto sekcí — stačí upravit na jednom místě.
 - **Ceník**: `.plans` v sekci `#weby`; ceny jsou i ve strukturovaných datech v hlavičce.
+- **Statistiky kanálů**: v sekci `#shorts`, čísla v `data-n` u `.stats b` (snímek z 10. 9. 2026) — přepsat ručně, nebo časem napojit na `stats.json`, který bude bot zapisovat.
 - **Ulice**: `street.js`, pole `BUILDINGS` (pořadí, šířka, patra, nápis, barvy). Přidání domu = jeden řádek + `id` shodný se sekcí v HTML.
 - **Barvy webu**: proměnné `--bg`, `--teal`, `--amber` … na začátku `<style>`.
 

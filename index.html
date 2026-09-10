@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ondřej Mičaník</title>
-<meta name="description" content="Ondřej Mičaník — student IT z Ostravy. Stavím Roblox hry, autonomního YouTube bota a weby pro lidi, kteří je potřebují. Jedna ulice, sedm dveří, projděte se.">
+<meta name="description" content="Ondřej Mičaník — lead developer Roblox hry Poznej Ostravu, autor autonomního YouTube Shorts bota a tvůrce webů z Ostravy. Jedna ulice, sedm dveří, projděte se.">
 <meta name="author" content="Ondřej Mičaník">
 <meta name="theme-color" content="#070A12">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website"><meta property="og:locale" content="cs_CZ">
 <meta property="og:title" content="Ondřej Mičaník — jedna ulice, sedm dveří">
-<meta property="og:description" content="Roblox hry, autonomní YouTube bot, weby na míru. Student IT z Ostravy.">
+<meta property="og:description" content="Lead developer Poznej Ostravu (Roblox), autonomní YouTube bot, weby na míru. Ostrava · Olomouc.">
 <link rel="canonical" href="https://kulisek2124.github.io/">
 <meta property="og:url" content="https://kulisek2124.github.io/">
 <meta property="og:image" content="https://kulisek2124.github.io/og-image.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -18,9 +18,9 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Person","@id":"https://kulisek2124.github.io/#me","name":"Ondřej Mičaník","url":"https://kulisek2124.github.io/","email":"mailto:ondrulisek@gmail.com","jobTitle":"Student IT, vývojář","homeLocation":{"@type":"Place","name":"Ostrava, Česko"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Univerzita Palackého v Olomouci, Pedagogická fakulta"},"knowsAbout":["Roblox Studio","Luau","Python","automatizace","tvorba webů","SEO","pixel art","AI nástroje"],"sameAs":["https://github.com/kulisek2124"]},
+ {"@type":"Person","@id":"https://kulisek2124.github.io/#me","name":"Ondřej Mičaník","url":"https://kulisek2124.github.io/","email":"mailto:ondrulisek@gmail.com","jobTitle":"Lead Developer","worksFor":{"@type":"Organization","name":"ČESKO.plus"},"homeLocation":{"@type":"Place","name":"Ostrava, Česko"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Univerzita Palackého v Olomouci, Pedagogická fakulta"},"knowsAbout":["Roblox Studio","Luau","Python","C#","SQL","vedení vývojového týmu","game design","automatizace","tvorba webů","SEO","pixel art","AI nástroje"],"sameAs":["https://github.com/kulisek2124","https://www.linkedin.com/in/ond%C5%99ej-mi%C4%8Dan%C3%ADk-0001b0373/","https://www.youtube.com/@Boogie2124","https://www.youtube.com/@secondsbeforeshorts"]},
  {"@type":"WebSite","@id":"https://kulisek2124.github.io/#site","url":"https://kulisek2124.github.io/","name":"Ondřej Mičaník","inLanguage":"cs","author":{"@id":"https://kulisek2124.github.io/#me"}},
- {"@type":"Service","name":"Tvorba webových stránek","provider":{"@id":"https://kulisek2124.github.io/#me"},"areaServed":"Česko","serviceType":"Web design a vývoj","description":"Weby na míru pro malé firmy a živnostníky: vlastní design, rychlost, SEO a připravenost pro AI vyhledávání, správa obsahu, předání kódu.","offers":[{"@type":"Offer","name":"Vizitka","price":"9900","priceCurrency":"CZK"},{"@type":"Offer","name":"Firemní web","price":"19900","priceCurrency":"CZK"},{"@type":"Offer","name":"Web se správou","price":"29900","priceCurrency":"CZK"}]}
+ {"@type":"Service","name":"Tvorba webových stránek","provider":{"@id":"https://kulisek2124.github.io/#me"},"areaServed":"Česko","serviceType":"Web design a vývoj","description":"Weby na míru pro malé firmy a živnostníky: vlastní design, rychlost, SEO a připravenost pro AI vyhledávání, správa obsahu, předání kódu.","offers":[{"@type":"Offer","name":"Vizitka","price":"3900","priceCurrency":"CZK"},{"@type":"Offer","name":"Firemní web","price":"8900","priceCurrency":"CZK"},{"@type":"Offer","name":"Web se správou","price":"14900","priceCurrency":"CZK"},{"@type":"Offer","name":"Cena dohodou","description":"Individuální nabídka podle rozsahu"}]}
 ]}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -156,7 +156,15 @@
   .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px}
   .plan{background:var(--panel);border:1px solid var(--line);padding:20px 22px;display:grid;gap:10px;align-content:start}
   .plan.hot{border-color:var(--teal);box-shadow:0 0 0 1px rgba(78,230,204,.2),0 0 40px var(--glow)}
-  .plan .price{font-family:var(--px);font-size:30px;color:var(--ink)}
+  .plan.deal{grid-column:1/-1;border-style:dashed;border-color:var(--line2);grid-template-columns:auto auto 1fr;align-items:center;gap:8px 22px} .plan.deal .price{color:var(--amber)} .plan.deal ul{display:flex;flex-wrap:wrap;gap:4px 22px;padding-left:18px} .plan.deal li{margin:0}
+  @media (max-width:640px){.plan.deal{grid-template-columns:1fr}}
+  .chan a.card{text-decoration:none;color:inherit}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:6px}
+  .stats div{background:var(--bg);border:1px solid var(--line);padding:8px 6px;text-align:center}
+  .stats b{display:block;font-family:var(--px);font-size:22px;color:var(--teal);font-variant-numeric:tabular-nums;line-height:1.1}
+  .stats span{font-size:11px;color:var(--mute);letter-spacing:.06em;text-transform:uppercase}
+  @media (max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .plan .price{font-family:var(--px);font-size:30px;color:var(--ink)} .plan.deal .price{font-size:22px}
   .plan .price small{font-size:14px;color:var(--mute);font-family:var(--mono)}
   .plan ul{margin:0;padding-left:18px;color:var(--ink2);font-size:14px}
   .plan li{margin:4px 0}
@@ -191,7 +199,7 @@
   <div class="wrap">
     <a class="brand" href="#top"><span class="lamp"></span><span><b>ONDŘEJ MIČANÍK</b><small>student · vývojář · Ostrava</small></span></a>
     <nav class="nav">
-      <a href="#o-mne">O mně</a><a href="#roblox">Roblox</a><a href="#shorts">Shorts bot</a><a href="#weby">Tvorba webů</a><a href="#lab">Laboratoř</a><a href="#skola">Zkušenosti</a><a href="#kontakt">Kontakt</a>
+      <a href="#o-mne">O mně</a><a href="#roblox">Hry</a><a href="#shorts">Shorts bot</a><a href="#weby">Tvorba webů</a><a href="#lab">Laboratoř</a><a href="#skola">Zkušenosti</a><a href="#kontakt">Kontakt</a>
     </nav>
     <div class="stat">
       <span class="clock">Ostrava · <b id="clock">--:--</b></span>
@@ -220,7 +228,7 @@
     <div class="head"><span class="n">01</span><h2>O mně</h2></div>
     <div class="two">
       <div>
-        <p class="lead">Jsem Ondřej, je mi 20, jsem z Ostravy a studuju informační technologie na Pedagogické fakultě Univerzity Palackého v Olomouci. Nejvíc mě baví stavět věci, které běží samy: hry pro Roblox s vlastní ekonomikou a fyzikou, bota, který každý den vydává YouTube Shorts bez toho, abych na něj sáhl, a weby pro lidi, kteří je potřebují a nechtějí se o ně starat.</p>
+        <p class="lead">Jsem Ondřej, je mi 20, jsem z Ostravy a studuju informační technologie na Pedagogické fakultě Univerzity Palackého v Olomouci. Vedu programátory v týmu, který staví Roblox hru <b>Poznej Ostravu</b>, provozuju bota, který každý den sám vydává YouTube Shorts na dva kanály, a dělám weby pro lidi, kteří je potřebují a nechtějí se o ně starat.</p>
         <p class="lead">Pracuju způsobem, kterému se dnes říká AI-native: AI je pro mě parťák, ne tlačítko. Plánuju, zadávám, kritizuju, testuju a ladím — a hlídám, aby výsledek dával smysl uživateli, ne jen mně. Tenhle web je toho ukázka: jedna ulice v Ostravě, kde každý dům je jedna část mého života.</p>
         <p class="lead small muted">Ulice nahoře je nakreslená pixel po pixelu na plátně 640 × 360 a žije: okna se rozsvěcují, tramvaj DPO jezdí podle nálady, na parapetu spí kočka a nebe se řídí skutečným časem. Zkuste šipky.</p>
       </div>
@@ -228,31 +236,44 @@
         <dt>Jméno</dt><dd>Ondřej Mičaník</dd>
         <dt>Věk</dt><dd>20 let</dd>
         <dt>Bydliště</dt><dd>Ostrava (přes týden Olomouc)</dd>
-        <dt>Studium</dt><dd>PdF UP Olomouc — IT a společenské vědy se zaměřením na vzdělávání (od 2026)</dd>
-        <dt>Nástroje</dt><dd>Roblox Studio, Python, VS Code, Git, Claude & GPT</dd>
+        <dt>Práce</dt><dd>Lead Developer, ČESKO.plus (od 7/2026) · weby na volné noze (od 9/2025)</dd>
+        <dt>Studium</dt><dd>PdF UP Olomouc — IT a společenské vědy se zaměřením na vzdělávání (od 2026) · maturita IT, Vítkovická SPŠ</dd>
+        <dt>Nástroje</dt><dd>Roblox Studio (Luau), C#, Python, SQL, VS Code, Git, Claude & GPT</dd>
         <dt>Stav</dt><dd><span class="tag t">otevřený zakázkám na weby</span></dd>
       </dl>
     </div>
   </div></section>
 
   <section class="sec" id="roblox"><div class="wrap">
-    <div class="head"><span class="n">02</span><h2>Roblox projekty</h2></div>
-    <p class="lead">Herní systémy, které musí vydržet stovky hráčů najednou: povolání, ekonomika, vozidla s vlastní fyzikou, minihry. Všechno v Roblox Studiu a jazyce Luau.</p>
+    <div class="head"><span class="n">02</span><h2>Hry · Poznej Ostravu</h2><span class="tag p">Roblox</span></div>
+    <p class="lead">Jsem <b>vedoucí programátor</b> hry Poznej Ostravu: vedu tříčlenný programátorský tým v dvanáctičlenném vývojovém týmu studia ČESKO.plus, rozděluju úkoly, hlídám, že se dotáhnou, řeším technické problémy a navrhuju herní systémy. Hra je veřejná, hrají ji stovky hráčů a musí vydržet — v Roblox Studiu a jazyce Luau.</p>
     <div class="grid">
-      <article class="card cm"><i class="c"></i><span class="st">Hlavní projekt · <b>ve vývoji</b></span><h3>Poznej Ostravu</h3>
-        <p>Ostrava jako hratelné město s povoláními. Hráč si vybere práci a postupuje hodnostmi — nebo si jen zaskočí na kolo.</p>
-        <ul><li><b>Městská policie</b> s hodnostmi a minihrami: kamerový dispečink (najít sprejera na městských kamerách), pátrání po ztraceném dítěti přes výslech svědků</li><li><b>Hasiči, kurýr Foodora, Lidl, OZO</b> — každé povolání má vlastní smyčku a výdělek</li><li><b>Ekonomika</b>: vyvážené hodinové výdělky, ceny domů a aut, mince ve světě</li><li><b>Vozidla</b>: skútry s vlastním jízdním modelem (antigravitační závěs, náklon do zatáček, IK jezdce), nextbike kola s plynulou jízdou po klientu</li></ul>
-        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">game design</span><span class="tag">fyzika</span></span><a href="https://www.roblox.com/games/130787180878027" target="_blank" rel="noopener">otevřít na Robloxu ↗</a></div>
+      <article class="card cm" style="grid-column:1/-1"><i class="c"></i><span class="st">Hlavní projekt · <b>veřejná hra, ve vývoji</b></span><h3>Poznej Ostravu</h3>
+        <p>Ostrava jako hratelné město. Hráč si vybere povolání, postupuje hodnostmi, vydělává, kupuje domy a auta — nebo si jen sedne do tramvaje a projede město, které zná z okna.</p>
+        <div class="two" style="margin-top:6px">
+          <ul>
+            <li><b>Povolání s hodnostmi a minihrami</b> — městská policie (kamerový dispečink: najít sprejera na městských kamerách; pátrání po ztraceném dítěti přes výslech svědků), hasiči, kurýr Foodora, Lidl, OZO</li>
+            <li><b>Funkční MHD</b> — hráč se po Ostravě sveze městskou hromadnou dopravou jako v reálném městě</li>
+            <li><b>Městské holubníky</b> — práce, kde se hráč stará o holuby (voda, krmivo, podestýlka, směny u NPC), ~70 hnízd a holubi, kteří opravdu létají; kariérní formulář přes externí API s ochranou proti spamu</li>
+            <li><b>Vozidla</b> — skútry s vlastním jízdním modelem (antigravitační závěs, náklon do zatáček, IK jezdce, nasedání dotykem), nextbike kola s plynulou jízdou simulovanou na klientu a validovanou serverem</li>
+          </ul>
+          <ul>
+            <li><b>Ekonomika</b> — vyvážené hodinové výdělky napříč povoláními, ceny domů a aut, mince ve světě; holubníky vydělávají víc než vstupní práce, ale nepřebijí hodnostní kariéru</li>
+            <li><b>Systémy</b> — evidence zaměstnání (JobData), služební vozidla zamčená na povolání, spawn s hledáním volného místa, ochrana proti zneužití</li>
+            <li><b>Moje role</b> — vedení tří programátorů, rozdělování a kontrola úkolů, návrh systémů, ladění fyziky a výkonu, údržba běžící veřejné hry</li>
+          </ul>
+        </div>
+        <div class="foot"><span><span class="tag p">Luau</span><span class="tag p">Roblox Studio</span><span class="tag">game design</span><span class="tag">vedení týmu</span><span class="tag">fyzika</span><span class="tag">ekonomika</span></span><a href="https://www.roblox.com/games/130787180878027" target="_blank" rel="noopener">otevřít na Robloxu ↗</a></div>
       </article>
-      <article class="card cm"><i class="c"></i><span class="st">Herní systém · <b>hotové</b></span><h3>Městské holubníky</h3>
-        <p>Práce, kde se hráč stará o holuby: voda, krmivo, podestýlka, směny u NPC, ~70 hnízd a holubi, kteří opravdu létají.</p>
-        <ul><li>Kariérní formulář a dotazy přes externí API</li><li>Ochrana proti spamu a zneužití</li><li>Navrženo tak, aby se holubníky vyplatily víc než vstupní práce, ale nepřebily hodnostní kariéru</li></ul>
-        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">API</span><span class="tag">systémy</span></span></div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))">
+      <article class="card cm"><i class="c"></i><span class="st">Tým · <b>ČESKO.plus</b></span><h3>Jak pracujeme</h3>
+        <p>Dvanáctičlenný vývojový tým, z toho tři programátoři pod mým vedením. Každý systém nejdřív navrhneme, pak ho jeden z nás postaví, otestuje se na vývojové place a teprve potom jde do hlavní hry. Vozidla, ekonomika i minihry prošly několika iteracemi podle zpětné vazby z testování.</p>
+        <div class="foot"><span><span class="tag">koordinace</span><span class="tag">code review</span><span class="tag">iterace</span></span></div>
       </article>
-      <article class="card cm"><i class="c"></i><span class="st">Vývojová place · <b>běží</b></span><h3>Stavění</h3>
-        <p>Testovací prostředí pro Poznej Ostravu. Tady se ladí vozidla a fyzika, než se přenesou do hlavní hry.</p>
-        <ul><li>Dvě iterace jízdního modelu skútrů — od A-Chassis k vlastnímu odlehčenému závěsu</li><li>Nasedání dotykem místo klávesy, ochrana proti okamžitému znovunasednutí</li></ul>
-        <div class="foot"><span><span class="tag p">Luau</span><span class="tag">prototypování</span></span></div>
+      <article class="card cm"><i class="c"></i><span class="st">Co bude dál · <b>plán</b></span><h3>Další hry</h3>
+        <p>Poznej Ostravu je první, ne poslední. Chci si vyzkoušet stavět hry i mimo Roblox — menší, vlastní projekty, kde je celý stack můj. Až tu přibude nový dům, bude to nová hra.</p>
+        <div class="foot"><span><span class="tag v">mimo Roblox</span><span class="tag v">vlastní engine / framework</span></span></div>
       </article>
     </div>
   </div></section>
@@ -272,25 +293,38 @@
       </div>
       <div class="card cm"><i class="c"></i><span class="st">Stack</span>
         <div class="kv"><dt>Jazyk</dt><dd>Python</dd><dt>Modely</dt><dd>Claude (přes předplatné, ne API)</dd><dt>API</dt><dd>YouTube Data API v3, Pexels, Pixabay, Wikimedia</dd><dt>Média</dt><dd>ffmpeg, edge-tts, ASS titulky</dd><dt>Běh</dt><dd>Windows Task Scheduler, 3 videa denně</dd><dt>Dashboard</dt><dd>pixel-art noční město (odkud je i tenhle web)</dd></div>
-        <p class="small muted">Kanály: <b>Boogie</b> (zajímavosti — This Can Kill You, Still Happening, The Number Nobody Checks, It Actually Happened) a <b>Seconds Before</b> (katastrofy).</p>
         <div class="foot"><span><span class="tag t">Python</span><span class="tag t">automatizace</span><span class="tag">ffmpeg</span><span class="tag">API</span></span></div>
       </div>
     </div>
+    <div class="grid chan">
+      <a class="card cm" href="https://www.youtube.com/@Boogie2124" target="_blank" rel="noopener"><i class="c"></i><span class="st">Kanál 1 · <b>od srpna 2026</b></span><h3>Boogie</h3>
+        <p>Zajímavosti, které se vás týkají. Čtyři série: This Can Kill You · Still Happening · The Number Nobody Checks · It Actually Happened.</p>
+        <div class="stats"><div><b data-n="172">172</b><span>odběratelů</span></div><div><b data-n="54">54</b><span>videí</span></div><div><b data-n="160507">160 507</b><span>zhlédnutí</span></div><div><b data-n="25818">25 818</b><span>nejlepší video</span></div></div>
+        <span class="small muted">3 videa denně · youtube.com/@Boogie2124 ↗</span>
+      </a>
+      <a class="card cm" href="https://www.youtube.com/@secondsbeforeshorts" target="_blank" rel="noopener"><i class="c"></i><span class="st">Kanál 2 · <b>od 6. září 2026</b></span><h3>Seconds Before</h3>
+        <p>Katastrofy vyprávěné od okamžiku, kdy ještě šlo něco udělat. Stejný kód, jiný brief — druhý kanál vznikl jedním příkazem.</p>
+        <div class="stats"><div><b data-n="4">4</b><span>odběratelé</span></div><div><b data-n="6">6</b><span>videí</span></div><div><b data-n="4372">4 372</b><span>zhlédnutí</span></div><div><b data-n="1515">1 515</b><span>nejlepší video</span></div></div>
+        <span class="small muted">3 videa denně · youtube.com/@secondsbeforeshorts ↗</span>
+      </a>
+    </div>
+    <p class="small muted" style="margin-top:10px">Čísla jsou snímek z 10. 9. 2026 (z vlastní analytiky bota); aktuální stav je na YouTube.</p>
   </div></section>
 
   <section class="sec" id="weby"><div class="wrap">
     <div class="head"><span class="n">04</span><h2>Tvorba webů</h2><span class="tag t">otevřeno</span></div>
-    <p class="lead">Postavím vám web, který vypadá dobře, načte se okamžitě a najde ho Google i AI asistenti. Žádná šablona — design na míru oboru, texty, které dávají smysl, a správa, kterou zvládne kdokoli. Web je po předání váš, včetně kódu.</p>
+    <p class="lead">Postavím vám web, který vypadá dobře, načte se okamžitě a najde ho Google i AI asistenti. Žádná šablona — design na míru oboru, texty, které dávají smysl, a správa, kterou zvládne kdokoli. Web je po předání váš, včetně kódu. Ceny jsou orientační — <b>vždy se domluvíme podle rozsahu</b>.</p>
     <div class="grid">
       <article class="card cm"><i class="c"></i><span class="st">Reference · <b>2026</b></span><h3>Advokátní kancelář Mičaník</h3><p>Klidný, čitelný web pro advokáta v Ostravě: 11 oblastí práva, online objednání na konzultaci a intranet s fakturami, klienty a poznámkami. Strukturovaná data, časté dotazy, přesměrování starých adres.</p><div class="foot"><span><span class="tag">rezervace</span><span class="tag">intranet</span><span class="tag">SEO</span></span><a href="https://kulisek2124.github.io/WEB/" target="_blank" rel="noopener">zobrazit ↗</a></div></article>
       <article class="card cm"><i class="c"></i><span class="st">Reference · <b>2026</b></span><h3>Bakasu Kennel</h3><p>Web chovatelské stanice francouzských buldočků: vrhy a stav štěňat, poptávkový formulář, galerie s alby pro stovky fotek a správa, kterou chovatelka obsluhuje z telefonu.</p><div class="foot"><span><span class="tag">galerie</span><span class="tag">správa</span><span class="tag">SEO</span></span><a href="https://github.com/kulisek2124/bakasu-kennel" target="_blank" rel="noopener">kód ↗</a></div></article>
       <article class="card cm"><i class="c"></i><span class="st">Co dostanete vždy</span><h3>Standard</h3><ul><li>vlastní design, ne šablona</li><li>mobil, rychlost, přístupnost</li><li>SEO + připravenost pro AI vyhledávání (schema.org, sitemap, llms.txt)</li><li>přesměrování starých adres, když nahrazujeme starý web</li><li>předání kódu a zaškolení</li></ul></article>
     </div>
     <div class="plans">
-      <div class="plan"><span class="st muted">Vizitka</span><span class="price">od 9 900 <small>Kč</small></span><ul><li>jednostránkový web</li><li>kontakt, mapa, služby</li><li>SEO základ</li><li>hotovo do týdne</li></ul></div>
-      <div class="plan hot"><span class="st muted">Firemní web</span><span class="price">od 19 900 <small>Kč</small></span><ul><li>více sekcí a stránek</li><li>formuláře, fotogalerie</li><li>strukturovaná data, časté dotazy</li><li>jednoduchá správa obsahu</li></ul></div>
-      <div class="plan"><span class="st muted">Web se správou</span><span class="price">od 29 900 <small>Kč</small></span><ul><li>rezervace / poptávky / galerie</li><li>databáze a přihlášení</li><li>e-mailová upozornění</li><li>zálohy</li></ul></div>
-      <div class="plan"><span class="st muted">Hosting a péče</span><span class="price">390 <small>Kč / měsíc</small></span><ul><li>hosting a doména v ceně nastavení</li><li>aktualizace a drobné úpravy</li><li>zálohy a dohled</li><li>odpověď do 24 h</li></ul></div>
+      <div class="plan"><span class="st muted">Vizitka</span><span class="price">od 3 900 <small>Kč</small></span><ul><li>jednostránkový web</li><li>kontakt, mapa, služby</li><li>SEO základ</li><li>hotovo do týdne</li></ul></div>
+      <div class="plan hot"><span class="st muted">Firemní web</span><span class="price">od 8 900 <small>Kč</small></span><ul><li>více sekcí a stránek</li><li>formuláře, fotogalerie</li><li>strukturovaná data, časté dotazy</li><li>jednoduchá správa obsahu</li></ul></div>
+      <div class="plan"><span class="st muted">Web se správou</span><span class="price">od 14 900 <small>Kč</small></span><ul><li>rezervace / poptávky / galerie</li><li>databáze a přihlášení</li><li>e-mailová upozornění</li><li>zálohy</li></ul></div>
+      <div class="plan"><span class="st muted">Hosting a péče</span><span class="price">250 <small>Kč / měsíc</small></span><ul><li>hosting a doména v ceně nastavení</li><li>aktualizace a drobné úpravy</li><li>zálohy a dohled</li><li>odpověď do 24 h</li></ul></div>
+      <div class="plan deal"><span class="st muted">Dohodou</span><span class="price">cena podle rozsahu</span><ul><li>nesedí vám žádný balíček? napište, co web má dělat</li><li>spolky, začínající firmy a studenti — umím jít níž</li><li>část práce za reference</li></ul></div>
     </div>
     <div class="steps">
       <div class="step"><b>01</b><p>Zavoláme si nebo napíšete. Řeknete, co web má dělat a pro koho.</p></div>
@@ -301,7 +335,7 @@
     <form class="form cm" id="offerForm"><i class="c"></i>
       <b style="font-family:var(--px);color:var(--teal);font-size:18px">Nezávazná poptávka</b>
       <div class="two"><label>Jméno / firma<input id="fName" required></label><label>E-mail nebo telefon<input id="fContact" required></label></div>
-      <label>Co potřebujete<select id="fType"><option>Vizitka</option><option selected>Firemní web</option><option>Web se správou</option><option>Nevím, poradíte</option></select></label>
+      <label>Co potřebujete<select id="fType"><option>Vizitka</option><option selected>Firemní web</option><option>Web se správou</option><option>Dohodou — mám vlastní představu</option><option>Nevím, poradíte</option></select></label>
       <label>Pár slov o vás a webu<textarea id="fMsg" rows="4" placeholder="Např. jsme malé kadeřnictví v Porubě, máme starý web z roku 2012…"></textarea></label>
       <div><button class="btn" type="submit">Odeslat poptávku →</button> <span class="small muted" style="margin-left:10px">Otevře se váš e-mail s předvyplněnou zprávou.</span></div>
     </form>
@@ -318,28 +352,34 @@
   </div></section>
 
   <section class="sec" id="skola"><div class="wrap">
-    <div class="head"><span class="n">06</span><h2>Studium & zkušenosti</h2></div>
+    <div class="head"><span class="n">06</span><h2>Zkušenosti & studium</h2></div>
     <div class="two">
       <div>
         <ul class="tl">
-          <li><b>2026 → Univerzita Palackého v Olomouci, Pedagogická fakulta</b><span>Bc. Informační technologie se zaměřením na vzdělávání + Společenské vědy se zaměřením na vzdělávání</span></li>
-          <li><b>2026 — weby na zakázku</b><span>advokátní kancelář, chovatelská stanice; SEO, správa obsahu, nasazení</span></li>
-          <li><b>2026 — YouTube Shorts bot</b><span>autonomní pipeline v Pythonu, dva kanály, denní provoz</span></li>
-          <li><b>Roblox — Poznej Ostravu, Městské holubníky, Stavění</b><span>herní systémy, ekonomika, fyzika vozidel, práce s týmem</span></li>
+          <li><b>7/2026 → Lead Developer, ČESKO.plus</b><span>na smlouvu, Ostrava, hybridně — vedení 3členného programátorského týmu v 12členném vývojovém týmu, rozdělování a kontrola úkolů, návrh herních systémů, vývoj a údržba veřejné hry Poznej Ostravu</span></li>
+          <li><b>2026 → Univerzita Palackého v Olomouci, Pedagogická fakulta</b><span>Bc. Informační technologie se zaměřením na vzdělávání + Společenské vědy se zaměřením na vzdělávání (2026–2029)</span></li>
+          <li><b>2026 — YouTube Shorts bot</b><span>autonomní pipeline v Pythonu, dva kanály, tři videa denně</span></li>
+          <li><b>9/2025 → tvorba webů na volné noze</b><span>advokátní kancelář, chovatelská stanice; předtím rok a půl práce v malém týmu na webech (2025–2026)</span></li>
+          <li><b>2021–2025 Vítkovická střední průmyslová škola</b><span>Informační technologie, maturita</span></li>
+          <li><b>Brigády při studiu</b><span>Megaknihy — sklad (6/2025–3/2026) · MS v hokeji 2024 · Wolt — vyskládávání objednávek (10/2023–3/2024) · ASUS — výměna touchpadů v noteboocích (léto 2022) · distribuce letáků (2020–2021)</span></li>
         </ul>
-        <p class="lead small" style="margin-top:18px">Co umím nejlíp: rozložit velkou věc na malé, zadat ji tak, aby šla postavit, a pak ji dotáhnout — včetně nudných částí jako zálohy, zámky proti souběhu a přesměrování starých adres.</p>
+        <p class="lead small" style="margin-top:18px">Co umím nejlíp: rozložit velkou věc na malé, zadat ji tak, aby šla postavit, a pak ji dotáhnout — včetně nudných částí jako zálohy, zámky proti souběhu a přesměrování starých adres. <a href="https://www.linkedin.com/in/ond%C5%99ej-mi%C4%8Dan%C3%ADk-0001b0373/" target="_blank" rel="noopener">LinkedIn ↗</a></p>
       </div>
       <div class="card cm"><i class="c"></i><span class="st">Stack</span>
         <div class="bars">
-          <div class="bar-row"><span>Roblox / Luau</span><div class="lvl"><i class="p" style="--w:88%"></i></div><em>3 projekty</em></div>
-          <div class="bar-row"><span>Python</span><div class="lvl"><i style="--w:78%"></i></div><em>automatizace, API</em></div>
-          <div class="bar-row"><span>HTML / CSS / JS</span><div class="lvl"><i style="--w:74%"></i></div><em>weby, canvas</em></div>
+          <div class="bar-row"><span>Roblox / Luau</span><div class="lvl"><i class="p" style="--w:90%"></i></div><em>lead developer</em></div>
+          <div class="bar-row"><span>C#</span><div class="lvl"><i style="--w:78%"></i></div><em>zkušený</em></div>
+          <div class="bar-row"><span>Python</span><div class="lvl"><i style="--w:78%"></i></div><em>zkušený · Shorts bot</em></div>
+          <div class="bar-row"><span>SQL / SQLite</span><div class="lvl"><i style="--w:72%"></i></div><em>zkušený</em></div>
+          <div class="bar-row"><span>HTML / CSS</span><div class="lvl"><i style="--w:74%"></i></div><em>pokročilý</em></div>
+          <div class="bar-row"><span>JavaScript / React</span><div class="lvl"><i style="--w:48%"></i></div><em>základy, s AI i canvas</em></div>
           <div class="bar-row"><span>SEO & AI-ready</span><div class="lvl"><i class="a" style="--w:70%"></i></div><em>schema.org, llms.txt</em></div>
-          <div class="bar-row"><span>Git / GitHub</span><div class="lvl"><i style="--w:66%"></i></div><em>Pages, Desktop</em></div>
           <div class="bar-row"><span>Práce s AI</span><div class="lvl"><i class="v" style="--w:92%"></i></div><em>Claude, GPT</em></div>
-          <div class="bar-row"><span>Testování</span><div class="lvl"><i style="--w:52%"></i></div><em>pytest, Playwright</em></div>
+          <div class="bar-row"><span>Git / GitHub</span><div class="lvl"><i style="--w:66%"></i></div><em>Pages, Desktop</em></div>
+          <div class="bar-row"><span>AutoCAD</span><div class="lvl"><i class="a" style="--w:70%"></i></div><em>pokročilý</em></div>
+          <div class="bar-row"><span>Windows / Linux</span><div class="lvl"><i style="--w:60%"></i></div><em>pokročilý / začátečník</em></div>
         </div>
-        <p class="small muted">Jazyky: čeština rodná, angličtina pracovní (čtu dokumentaci, píšu s AI).</p>
+        <p class="small muted">Jazyky: čeština rodná, angličtina středně pokročilá (dokumentace, práce s AI). Psaní všemi deseti.</p>
       </div>
     </div>
   </div></section>
@@ -350,6 +390,7 @@
     <div class="contact">
       <a class="card cm" href="mailto:ondrulisek@gmail.com"><i class="c"></i><span class="st">E-mail</span><b>ondrulisek@gmail.com</b><p>zakázky, spolupráce, dotazy</p></a>
       <a class="card cm" href="https://github.com/kulisek2124" target="_blank" rel="noopener"><i class="c"></i><span class="st">GitHub</span><b>kulisek2124</b><p>kód webů a projektů</p></a>
+      <a class="card cm" href="https://www.linkedin.com/in/ond%C5%99ej-mi%C4%8Dan%C3%ADk-0001b0373/" target="_blank" rel="noopener"><i class="c"></i><span class="st">LinkedIn</span><b>Ondřej Mičaník</b><p>praxe, tým, doporučení</p></a>
       <div class="card cm"><i class="c"></i><span class="st">Kde</span><b>Ostrava · Olomouc</b><p>osobně po domluvě, jinak online</p></div>
     </div>
   </div></section>
@@ -377,8 +418,8 @@
   Street.on('say',txt=>{ bubble.textContent=txt; bubble.classList.add('on'); clearTimeout(bubbleT); bubbleT=setTimeout(()=>bubble.classList.remove('on'),1800); });
   // panel
   const panel=$('#panel'), pBody=$('#pBody'), pTitle=$('#pTitle'), pSub=$('#pSub');
-  const NAMES={'o-mne':['Domek','o mně'],roblox:['Herna','Roblox projekty'],shorts:['Studio','YouTube Shorts bot'],weby:['Web studio','tvorba webů'],lab:['Laboratoř','nápady ve vývoji'],skola:['Škola','studium & zkušenosti'],kontakt:['Kiosek','kontakt']};
-  function open(id){ const sec=document.getElementById(id); if(!sec) return; if(matchMedia('(max-width:640px)').matches){ sec.scrollIntoView({behavior:'smooth'}); return; } pBody.innerHTML=sec.querySelector('.wrap').innerHTML; pBody.querySelectorAll('.head').forEach(h=>h.remove()); const n=NAMES[id]||[id,'']; pTitle.textContent=n[0]; pSub.textContent=n[1]+'  ·  Esc zavře  ·  '; const go=document.createElement('a'); go.href='#'+id; go.textContent='přejít na sekci ↓'; go.onclick=close; pSub.appendChild(go); panel.classList.add('on'); wireForm(pBody); }
+  const NAMES={'o-mne':['Domek','o mně'],roblox:['Herna','Poznej Ostravu & hry'],shorts:['Studio','YouTube Shorts bot'],weby:['Web studio','tvorba webů'],lab:['Laboratoř','nápady ve vývoji'],skola:['Škola','studium & zkušenosti'],kontakt:['Kiosek','kontakt']};
+  function open(id){ const sec=document.getElementById(id); if(!sec) return; if(matchMedia('(max-width:640px)').matches){ sec.scrollIntoView({behavior:'smooth'}); return; } pBody.innerHTML=sec.querySelector('.wrap').innerHTML; pBody.querySelectorAll('.head').forEach(h=>h.remove()); const n=NAMES[id]||[id,'']; pTitle.textContent=n[0]; pSub.textContent=n[1]+'  ·  Esc zavře  ·  '; const go=document.createElement('a'); go.href='#'+id; go.textContent='přejít na sekci ↓'; go.onclick=close; pSub.appendChild(go); panel.classList.add('on'); wireForm(pBody); countUp(pBody); }
   function close(){ panel.classList.remove('on'); }
   $('#pClose').onclick=close; panel.addEventListener('click',e=>{ if(e.target===panel) close(); });
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') close(); });
@@ -388,6 +429,9 @@
   // offer form → mail client
   function wireForm(root){ const f=root.querySelector('#offerForm'); if(!f) return; f.onsubmit=e=>{ e.preventDefault(); const g=id=>root.querySelector('#'+id).value.trim(); const body=`Dobrý den,\n\nmám zájem o: ${g('fType')}\nJméno / firma: ${g('fName')}\nKontakt: ${g('fContact')}\n\n${g('fMsg')}\n`; location.href='mailto:ondrulisek@gmail.com?subject='+encodeURIComponent('Poptávka webu — '+g('fName'))+'&body='+encodeURIComponent(body); }; }
   wireForm(document);
+  // channel stats: count up when they scroll into view (and inside the panel)
+  function countUp(root){ root.querySelectorAll('.stats b[data-n]').forEach(el=>{ if(el.dataset.done) return; el.dataset.done=1; const n=+el.dataset.n, t0=performance.now(), d=900+Math.min(900,n/60); const f=t=>{ const k=Math.min(1,(t-t0)/d), e=1-Math.pow(1-k,3); el.textContent=Math.round(n*e).toLocaleString('cs-CZ'); if(k<1) requestAnimationFrame(f); }; requestAnimationFrame(f); }); }
+  if('IntersectionObserver' in window){ const io=new IntersectionObserver(es=>es.forEach(x=>{ if(x.isIntersecting){ countUp(x.target); io.unobserve(x.target);} }),{threshold:.3}); document.querySelectorAll('.chan .card').forEach(c=>io.observe(c)); } else countUp(document);
   // deep link
   if(location.hash && NAMES[location.hash.slice(1)]) Street.stand(location.hash.slice(1));
 })();
